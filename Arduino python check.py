@@ -82,8 +82,8 @@ def Call_reader():
 
 
 ## main code for testing 
-
-arduino = serial.Serial('COM6', 115200, timeout =.1)
+# /dev/ttyUSB0 corresponds to the top USB3 port on the rPi 4
+arduino = serial.Serial('/dev/ttyUSB0', 115200, timeout =.1)
 
 
 
